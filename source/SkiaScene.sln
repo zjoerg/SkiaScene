@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TouchTracking", "TouchTracking", "{5EAAF631-6151-4F9B-B022-344EACF47C8B}"
 EndProject
@@ -27,6 +27,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkiaScene", "SkiaScene\Skia
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchTracking.Forms.iOS", "TouchTracking\TouchTracking.Forms.iOS\TouchTracking.Forms.iOS.csproj", "{2BDD28D5-D3EA-4429-9594-4B3FEFC12214}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TouchTracking.Droid_Shared", "TouchTracking\TouchTracking.Droid_Shared\TouchTracking.Droid_Shared.shproj", "{FFBD09F3-91F0-4335-BA85-5CCAD43CC27B}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TouchTracking.iOS_Shared", "TouchTracking\TouchTracking.iOS_Shared\TouchTracking.iOS_Shared.shproj", "{CC3B76C5-0E60-4241-9CC1-CF5F6C57A261}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TouchTracking.UWP_Shared", "TouchTracking\TouchTracking.UWP_Shared\TouchTracking.UWP_Shared.shproj", "{44137E40-4A40-4FE0-AC9C-810E879489CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchTracking.MAUI", "TouchTracking\TouchTracking.MAUI\TouchTracking.MAUI.csproj", "{E5E8B671-8221-4C73-A132-1C031BF42CBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,7 +56,6 @@ Global
 		{4A5ED71A-78CD-4FB7-8A82-9B1209F5BDCE}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{4A5ED71A-78CD-4FB7-8A82-9B1209F5BDCE}.Debug|x86.Build.0 = Debug|Any CPU
 		{4A5ED71A-78CD-4FB7-8A82-9B1209F5BDCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A5ED71A-78CD-4FB7-8A82-9B1209F5BDCE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4A5ED71A-78CD-4FB7-8A82-9B1209F5BDCE}.Release|ARM.ActiveCfg = Release|Any CPU
 		{4A5ED71A-78CD-4FB7-8A82-9B1209F5BDCE}.Release|ARM.Build.0 = Release|Any CPU
 		{4A5ED71A-78CD-4FB7-8A82-9B1209F5BDCE}.Release|x64.ActiveCfg = Release|Any CPU
@@ -96,7 +103,6 @@ Global
 		{BD5B7DF3-4B8B-45A5-ADF7-DB4A7C8A31B7}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{BD5B7DF3-4B8B-45A5-ADF7-DB4A7C8A31B7}.Debug|x86.Build.0 = Debug|Any CPU
 		{BD5B7DF3-4B8B-45A5-ADF7-DB4A7C8A31B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD5B7DF3-4B8B-45A5-ADF7-DB4A7C8A31B7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BD5B7DF3-4B8B-45A5-ADF7-DB4A7C8A31B7}.Release|ARM.ActiveCfg = Release|Any CPU
 		{BD5B7DF3-4B8B-45A5-ADF7-DB4A7C8A31B7}.Release|ARM.Build.0 = Release|Any CPU
 		{BD5B7DF3-4B8B-45A5-ADF7-DB4A7C8A31B7}.Release|x64.ActiveCfg = Release|Any CPU
@@ -112,7 +118,6 @@ Global
 		{75F38D2D-C200-4842-9CB0-BCDD182838D2}.Debug|x86.ActiveCfg = Debug|x86
 		{75F38D2D-C200-4842-9CB0-BCDD182838D2}.Debug|x86.Build.0 = Debug|x86
 		{75F38D2D-C200-4842-9CB0-BCDD182838D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{75F38D2D-C200-4842-9CB0-BCDD182838D2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{75F38D2D-C200-4842-9CB0-BCDD182838D2}.Release|ARM.ActiveCfg = Release|ARM
 		{75F38D2D-C200-4842-9CB0-BCDD182838D2}.Release|ARM.Build.0 = Release|ARM
 		{75F38D2D-C200-4842-9CB0-BCDD182838D2}.Release|x64.ActiveCfg = Release|x64
@@ -160,7 +165,6 @@ Global
 		{CBC5EA0C-12B4-440B-9A84-B6D5A1B7DBED}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{CBC5EA0C-12B4-440B-9A84-B6D5A1B7DBED}.Debug|x86.Build.0 = Debug|Any CPU
 		{CBC5EA0C-12B4-440B-9A84-B6D5A1B7DBED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CBC5EA0C-12B4-440B-9A84-B6D5A1B7DBED}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CBC5EA0C-12B4-440B-9A84-B6D5A1B7DBED}.Release|ARM.ActiveCfg = Release|Any CPU
 		{CBC5EA0C-12B4-440B-9A84-B6D5A1B7DBED}.Release|ARM.Build.0 = Release|Any CPU
 		{CBC5EA0C-12B4-440B-9A84-B6D5A1B7DBED}.Release|x64.ActiveCfg = Release|Any CPU
@@ -176,7 +180,6 @@ Global
 		{39D92863-4CFD-434D-91E9-80625E284813}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{39D92863-4CFD-434D-91E9-80625E284813}.Debug|x86.Build.0 = Debug|Any CPU
 		{39D92863-4CFD-434D-91E9-80625E284813}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{39D92863-4CFD-434D-91E9-80625E284813}.Release|Any CPU.Build.0 = Release|Any CPU
 		{39D92863-4CFD-434D-91E9-80625E284813}.Release|ARM.ActiveCfg = Release|Any CPU
 		{39D92863-4CFD-434D-91E9-80625E284813}.Release|ARM.Build.0 = Release|Any CPU
 		{39D92863-4CFD-434D-91E9-80625E284813}.Release|x64.ActiveCfg = Release|Any CPU
@@ -192,13 +195,28 @@ Global
 		{2BDD28D5-D3EA-4429-9594-4B3FEFC12214}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{2BDD28D5-D3EA-4429-9594-4B3FEFC12214}.Debug|x86.Build.0 = Debug|Any CPU
 		{2BDD28D5-D3EA-4429-9594-4B3FEFC12214}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2BDD28D5-D3EA-4429-9594-4B3FEFC12214}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2BDD28D5-D3EA-4429-9594-4B3FEFC12214}.Release|ARM.ActiveCfg = Release|Any CPU
 		{2BDD28D5-D3EA-4429-9594-4B3FEFC12214}.Release|ARM.Build.0 = Release|Any CPU
 		{2BDD28D5-D3EA-4429-9594-4B3FEFC12214}.Release|x64.ActiveCfg = Release|Any CPU
 		{2BDD28D5-D3EA-4429-9594-4B3FEFC12214}.Release|x64.Build.0 = Release|Any CPU
 		{2BDD28D5-D3EA-4429-9594-4B3FEFC12214}.Release|x86.ActiveCfg = Release|Any CPU
 		{2BDD28D5-D3EA-4429-9594-4B3FEFC12214}.Release|x86.Build.0 = Release|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Debug|ARM.Build.0 = Debug|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Debug|x64.Build.0 = Debug|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Debug|x86.Build.0 = Debug|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Release|ARM.ActiveCfg = Release|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Release|ARM.Build.0 = Release|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Release|x64.ActiveCfg = Release|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Release|x64.Build.0 = Release|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Release|x86.ActiveCfg = Release|Any CPU
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -214,8 +232,21 @@ Global
 		{CBC5EA0C-12B4-440B-9A84-B6D5A1B7DBED} = {5EAAF631-6151-4F9B-B022-344EACF47C8B}
 		{39D92863-4CFD-434D-91E9-80625E284813} = {86604022-2CED-4F88-8A0B-B518738BBD5D}
 		{2BDD28D5-D3EA-4429-9594-4B3FEFC12214} = {5EAAF631-6151-4F9B-B022-344EACF47C8B}
+		{FFBD09F3-91F0-4335-BA85-5CCAD43CC27B} = {5EAAF631-6151-4F9B-B022-344EACF47C8B}
+		{CC3B76C5-0E60-4241-9CC1-CF5F6C57A261} = {5EAAF631-6151-4F9B-B022-344EACF47C8B}
+		{44137E40-4A40-4FE0-AC9C-810E879489CF} = {5EAAF631-6151-4F9B-B022-344EACF47C8B}
+		{E5E8B671-8221-4C73-A132-1C031BF42CBA} = {5EAAF631-6151-4F9B-B022-344EACF47C8B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D1DB94F-B0A3-4696-ADF4-DAD4021008F6}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		TouchTracking\TouchTracking.Droid_Shared\TouchTracking.Droid_Shared.projitems*{0be88b46-bc5f-4f31-97df-5ce1fd8eb04b}*SharedItemsImports = 4
+		TouchTracking\TouchTracking.UWP_Shared\TouchTracking.UWP_Shared.projitems*{3365091c-7c2d-487d-b803-68edfe8b73f6}*SharedItemsImports = 4
+		TouchTracking\TouchTracking.UWP_Shared\TouchTracking.UWP_Shared.projitems*{44137e40-4a40-4fe0-ac9c-810e879489cf}*SharedItemsImports = 13
+		TouchTracking\TouchTracking.iOS_Shared\TouchTracking.iOS_Shared.projitems*{4dc6a992-335f-4016-9fdf-db6a5cd55892}*SharedItemsImports = 4
+		TouchTracking\TouchTracking.iOS_Shared\TouchTracking.iOS_Shared.projitems*{cc3b76c5-0e60-4241-9cc1-cf5f6c57a261}*SharedItemsImports = 13
+		TouchTracking\TouchTracking.Droid_Shared\TouchTracking.Droid_Shared.projitems*{e5e8b671-8221-4c73-a132-1c031bf42cba}*SharedItemsImports = 5
+		TouchTracking\TouchTracking.Droid_Shared\TouchTracking.Droid_Shared.projitems*{ffbd09f3-91f0-4335-ba85-5ccad43cc27b}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal

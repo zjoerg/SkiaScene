@@ -3,7 +3,7 @@
   <metadata>
     <id>TouchTracking</id>
     <title>TouchTracking</title>
-    <version>1.2.0</version>
+    <version>1.3.0</version>
     <authors>Ondrej Kunc</authors>
     <owners>Ondrej Kunc</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -17,5 +17,8 @@
     <file src="..\source\TouchTracking\TouchTracking.Droid\bin\Release\*.dll" target="lib/MonoAndroid" />
     <file src="..\source\TouchTracking\TouchTracking.iOS\bin\Release\*.dll" target="lib/XamariniOS" />
     <file src="..\source\TouchTracking\TouchTracking.UWP\bin\Release\*.dll" target="lib/uap10.0" />
+    <file src="..\source\TouchTracking\TouchTracking.MAUI\bin\Release\net6.0-android\*.dll" target="lib/net6.0-android21.0"/>
+    <file src="..\source\TouchTracking\TouchTracking.MAUI\bin\Release\net6.0-ios\*.dll" target="lib/net6.0-ios14.2"/>
+    <file src="..\source\TouchTracking\TouchTracking.MAUI\bin\Release\net6.0-windows10.0.19041.0\*.dll" target="lib/net6.0-windows10.0.19041.0"/>
   </files>
 </package>

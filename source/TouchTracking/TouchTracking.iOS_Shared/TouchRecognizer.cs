@@ -39,7 +39,11 @@ namespace TouchTracking.iOS
 
             foreach (UITouch touch in touches.Cast<UITouch>())
             {
+#if NET6_0_OR_GREATER
+                long id = touch.Handle.Handle.ToInt64();
+#else
                 long id = touch.Handle.ToInt64();
+#endif
                 FireEvent(this, id, TouchActionType.Pressed, touch, true);
 
                 if (!idToTouchDictionary.ContainsKey(id))
@@ -56,7 +60,11 @@ namespace TouchTracking.iOS
 
             foreach (UITouch touch in touches.Cast<UITouch>())
             {
+#if NET6_0_OR_GREATER
+                long id = touch.Handle.Handle.ToInt64();
+#else
                 long id = touch.Handle.ToInt64();
+#endif
 
                 if (_capture)
                 {
@@ -80,7 +88,11 @@ namespace TouchTracking.iOS
 
             foreach (UITouch touch in touches.Cast<UITouch>())
             {
+#if NET6_0_OR_GREATER
+                long id = touch.Handle.Handle.ToInt64();
+#else
                 long id = touch.Handle.ToInt64();
+#endif
 
                 if (_capture)
                 {
@@ -105,7 +117,11 @@ namespace TouchTracking.iOS
 
             foreach (UITouch touch in touches.Cast<UITouch>())
             {
+#if NET6_0_OR_GREATER
+                long id = touch.Handle.Handle.ToInt64();
+#else
                 long id = touch.Handle.ToInt64();
+#endif
 
                 if (_capture)
                 {
@@ -121,7 +137,11 @@ namespace TouchTracking.iOS
 
         void CheckForBoundaryHop(UITouch touch)
         {
+#if NET6_0_OR_GREATER
+            long id = touch.Handle.Handle.ToInt64();
+#else
             long id = touch.Handle.ToInt64();
+#endif
 
             // TODO: Might require converting to a List for multiple hits
             TouchRecognizer recognizerHit = null;

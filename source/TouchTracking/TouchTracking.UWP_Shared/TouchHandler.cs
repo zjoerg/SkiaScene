@@ -1,6 +1,12 @@
-﻿using Windows.UI.Input;
+﻿#if NET6_0_OR_GREATER
+using Microsoft.UI.Input;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Input;
+#else
+using Windows.UI.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Input;
+#endif
 
 namespace TouchTracking.UWP
 {
@@ -22,7 +28,7 @@ namespace TouchTracking.UWP
                 _frameworkElement.PointerCanceled += OnPointerCancelled;
             }
         }
-        
+
 
         public override void UnregisterEvents(FrameworkElement frameworkElement)
         {
